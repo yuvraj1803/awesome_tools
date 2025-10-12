@@ -11,7 +11,7 @@ int hex2dec_validate_hex(char *hex) {
 		return 0;
 	
 	for(int i = 2; i < (int) strlen(hex); i++) {
-		if((hex[i] <= '9' && hex[i] >= '0') || (hex[i] <= 'f' || hex[i] >= 'a'))
+		if((hex[i] <= '9' && hex[i] >= '0') || (hex[i] <= 'f' && hex[i] >= 'a'))
 			continue;
 		return 0;
 	}
